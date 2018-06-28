@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Yoga</string>
+    <string name="start_play">start play</string>
+    <string name="name_of_application">name of application</string>
+    <string name="exercises">exercises</string>
+    <string name="setting">setting</string>
+    <string name="calender">calender</string>
+    <string name="todo">TODO</string>
+</resources>
