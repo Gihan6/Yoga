@@ -4,62 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="com.example.gihan.yoga.SettingPage">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:padding="16dp"
-        app:cardBackgroundColor="@color/cardview_light_background"
 
-        app:cardElevation="4dp">
 
-        <RadioGroup
-            android:id="@+id/setting_radio_group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
 
-            >
-
-            <RadioButton
-                android:layout_margin="5dp"
-                android:padding="8dp"
-                android:id="@+id/setting_radio_easy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Easy"
-                android:theme="@style/myRadioButton" />
-
-            <RadioButton
-                android:layout_margin="5dp"
-                android:padding="8dp"
-                android:id="@+id/setting_radio_meduim"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meduim"
-                android:theme="@style/myRadioButton"
-
-                />
-
-            <RadioButton
-                android:layout_margin="5dp"
-                android:padding="8dp"
-                android:id="@+id/setting_radio_hard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hard"
-                android:theme="@style/myRadioButton"
-
-                />
-
-        </RadioGroup>
-
-    </android.support.v7.widget.CardView>
 
 
     <TimePicker
@@ -80,7 +29,7 @@
         android:layout_gravity="center_horizontal"
         android:textOff="OFF"
         android:textOn="ON"
-        android:layout_below="@+id/cardview"
+        android:layout_below="@+id/setting_radio_group"
         android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/btn_save"
@@ -97,6 +46,54 @@
       android:background="@color/colorPrimary"
         android:layout_marginEnd="4dp"
         android:layout_marginStart="8dp" />
+    <RadioGroup
+        android:layout_margin="16dp"
+        android:id="@+id/setting_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        android:foregroundGravity="center"
+
+        >
+        <RadioButton
+            android:id="@+id/setting_radio_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/switch_button"
+            android:layout_alignRight="@+id/switch_button"
+            android:layout_alignTop="@+id/setting_radio_group"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:padding="8dp"
+            android:text="Easy"
+            android:theme="@style/myRadioButton" />
+        <RadioButton
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:id="@+id/setting_radio_meduim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meduim"
+            android:theme="@style/myRadioButton"
+
+            />
+
+        <RadioButton
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:id="@+id/setting_radio_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:theme="@style/myRadioButton"
+
+            />
+
+    </RadioGroup>
+
+
 
 
 </RelativeLayout>

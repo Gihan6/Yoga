@@ -8,4 +8,5 @@
     <color name="pink">#f69ac5</color>
     <color name="diagon">#3964c3</color>
 
+    <color name="cardview_light_background">#ffffff</color>
 </resources>
